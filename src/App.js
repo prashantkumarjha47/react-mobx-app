@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import { observer } from "mobx-react";
+import React from "react";
+import Routes from "./Router";
 import "./App.css";
-import Store from "./Store";
-@observer
-class App extends Component {
-  render() {
-    return <div className="App">{Store.pfrDetails}</div>;
-  }
-}
+
+const App = () => (
+  <div>
+    <Routes />
+  </div>
+);
 
 export default App;
